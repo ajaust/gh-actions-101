@@ -114,7 +114,7 @@ run-name: First workflow # Optional
 # Events triggering the workflow
 on: [push]
 
-# Group of jobs to run as poart of the workflow
+# Group of jobs to run as part of the workflow
 jobs:
   greet:
     runs-on: ubuntu-latest
@@ -244,6 +244,7 @@ software packaging.
         contents: read
 
       strategy:
+        fail-fast: false
         matrix:
           python-version: [ "3.12", "3.13", "3.14" ]
           os: [ "macos-latest", "windows-latest", "ubuntu-latest" ]
