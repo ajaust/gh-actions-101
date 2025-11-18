@@ -3,7 +3,11 @@ run-name: First workflow # Optional
 permissions: {}
 
 # Events triggering workflow
-on: [push]
+on: 
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 # Group of jobs to run as part of the workflow
 jobs:
