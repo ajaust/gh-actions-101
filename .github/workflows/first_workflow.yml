@@ -1,6 +1,6 @@
 name: My first Github workflow
 run-name: First workflow # Optional
-permission: {}
+permissions: {}
 
 # Events triggering workflow
 on: [push]
